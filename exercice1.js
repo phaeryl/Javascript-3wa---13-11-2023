@@ -11,6 +11,11 @@ Que faire dedans ?
 Vous ne devez utiliser ni forEach ni aucune fonction provenant de Array.prototype (Donc toute les fonction qui s'écrivent array.func() sont interdites.)
 EDIT : Sauf push() bien évidemment 
 */
+function incrementOne(number)
+{
+    return number +1;
+}
+let myArray = [1, 2, 3];
 function myMap(arr, func)
 {
     let newArr = [];
@@ -21,3 +26,4 @@ function myMap(arr, func)
 
 }
 
+console.log(myMap(myArray,incrementOne));
