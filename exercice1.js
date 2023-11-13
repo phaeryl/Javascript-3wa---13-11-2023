@@ -15,7 +15,9 @@ function myMap(arr, func)
 {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        push(func(arr[i]));
+        newArr.push(func(arr[i]));
     }
+    return newArr;
+
 }
 
